@@ -28,6 +28,10 @@ span.field-validation-error {
     font-weight: bold;
 }
 
+.voffset {
+    margin-top: 40px;
+}
+
 /* Bootstrap Overrides */
 .navbar-inverse {
     background-color: #ff4342;
