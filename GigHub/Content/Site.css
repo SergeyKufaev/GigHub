@@ -168,3 +168,6 @@ h6,
 .popover-notifications ul.notifications .highlight {
   font-weight: bold;
 }
+#search-gigs {
+  width: 300px;
+}
