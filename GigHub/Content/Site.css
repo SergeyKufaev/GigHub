@@ -17,13 +17,13 @@
 }
 /* Set width on the form input elements since they're 100% wide by default */
 input {
-  max-width: 280px;
+  max-width: 320px;
 }
 select {
-  max-width: 280px;
+  max-width: 320px;
 }
 textarea {
-  max-width: 280px;
+  max-width: 320px;
 }
 span.field-validation-error {
   color: red;
@@ -169,5 +169,8 @@ h6,
   font-weight: bold;
 }
 #search-gigs {
-  width: 300px;
+  width: 340px;
+}
+#search-gigs .btn-taller {
+  height: 44px;
 }
