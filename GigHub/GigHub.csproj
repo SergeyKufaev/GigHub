@@ -295,6 +295,8 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="Content\site.less" />
+    <Content Include="Scripts\app\controllers\gigsController.js" />
+    <Content Include="Scripts\app\services\attendanceService.js" />
     <Content Include="Scripts\bootbox.js" />
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
