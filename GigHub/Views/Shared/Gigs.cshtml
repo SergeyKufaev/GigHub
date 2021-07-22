@@ -7,7 +7,7 @@
 {
     <div class="form-group">
         <div id="search-gigs" class="input-group">
-            @Html.TextBoxFor(m => m.SearchTerm, new { @class = "form-control", placeholder = "Search by artist, genre..." })
+            @Html.TextBoxFor(m => m.SearchTerm, new { @class = "form-control", placeholder = "Search by Artist, Genre or Location..." })
             <span class="input-group-addon">
                 <i class="glyphicon glyphicon-search"></i>
             </span>
@@ -25,6 +25,9 @@
                 <div class="day">
                     @gig.DateTime.ToString("d ")
                 </div>
+                <div class="day-of-the-week">
+                    @gig.DateTime.ToString("ddd")
+                </div>
             </div>
             <div class="details">
                 <span class="artist">
@@ -36,10 +39,6 @@
                         <span class="label label-warning">Canceled</span>
                     }
 
-                    @if (Model.ShowActions)
-                    {
-                        <button class="btn btn-link btn-sm js-toggle-follow" data-user-id="@gig.ArtistId">Follow</button>
-                    }
                 </span>
                 <span class="genre">
                     @gig.Genre.Name
@@ -49,7 +48,7 @@
                     bool isAttending = Model.Attendances.Contains(gig.Id);
                     <button data-gig-id="@gig.Id"
                             class="btn @(isAttending ? "btn-info" : "btn-default")
-                            btn-sm pull-right js-toggle-attendance">
+                            btn-sm js-toggle-attendance">
                         @(isAttending ? "Going" : "Going?")
                     </button>
                 }
