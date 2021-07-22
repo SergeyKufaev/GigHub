@@ -17,7 +17,7 @@
     };
 
     let done = function () {
-        let text = (button.text() == "Going") ? "Going?" : "Going";
+        let text = (button.text().trim() == "Going") ? "Going?" : "Going";
 
         button.toggleClass("btn-info").toggleClass("btn-default").text(text);
     };
