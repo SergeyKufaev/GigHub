@@ -4,7 +4,7 @@ namespace GigHub.Migrations
 
     using GigHub.Persistence;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ApplicationDbContext>
+    public sealed class Configuration : DbMigrationsConfiguration<ApplicationDbContext>
     {
         public Configuration()
         {
